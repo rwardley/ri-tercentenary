@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>R.I. Tercentenary</title>
+
+		<!--put your external stylesheet links here-->
+        <script src="https://use.fontawesome.com/8ada6bb8b1.js"></script>
+		<link rel="stylesheet" href="lib/leaflet/leaflet.css">
+        <link rel="stylesheet" href="css/MarkerCluster.css">
+		<link rel="stylesheet" href="css/MarkerCluster.Default.css">
+        <!-- style sheet for mapzen.js -->
+        <link rel="stylesheet" href="https://mapzen.com/js/mapzen.standalone.css">
+		<link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<!--[if IE<9]>
+			<link rel="stylesheet" href="css/style.ie.css">
+		<![endif]-->
+     </head>
+    <body style="background-color:#fff;">
+    </body>
+
+	<body>
+        <div id= "map"></div>
+        <div id="title">
+            <h1>Explore Rhode Island History</h1>
+        </div>
+        <div id="splash">
+                <h4>Rhode Island, the Ocean State, has a unique culture. As the first colony to declare independece from Great Britain and the last to sign the Constitution this small state takes a lot of pride in its history. The colony of Rhode Island and Providence Plantations was established in 1636. Three hundred years later, this map was made to commemorate that anniversary. 
+                <br>
+                <br>
+                Now, <i>The Tercentenary Map of Rhode Island and Providence Plantations</i>, rescued from my parents damp basement, is getting a new life online. I hope you'll take the time to pan around this map, zoom into the details of the illustrations, and click on the symbols to learn about some of the important places and events from the first 300 years of Rhode Island’s history!</h4>
+            <h5><i>Click anywhere to close</i></h5>
+        </div>    
+        <div class="show">
+             <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+            <span class="my-text">About</span>
+        </div>
+        <div id="legend">
+             <input id="mapButtonCheckBox" type="checkbox" class="leaflet-control-layers-selector" checked="">
+            <p id="mapButtonText">R.I. Tercentenary Map</p>
+        </div>
+        <!--div id="locator">
+            <p>LOCATOR</p>
+        </div-->
+        <div id="homeButton">
+            <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+        </div>
+        <div id="slider">
+            <p>Opacity</p>
+            <input id="slide" type="range" min="0" max="1" step="0.05" value="1">
+        </div>
+        <div id="panel"></div>
+        
+		<!--you can also use this space for internal scripts or stylesheets;
+		place these within <script> or <style> tags-->
+
+		<!--put your external script links here-->
+		<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>
+		<script type="text/javascript" src="lib/leaflet/leaflet.markercluster-src.js"></script>
+        <!-- latest version of stasndalone mapzen.js-->
+        <script src="https://mapzen.com/js/mapzen.standalone.js"></script>
+        <!--Always load your .JS file last-->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

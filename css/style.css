@@ -1,0 +1,160 @@
+/* Stylesheet by Rosemary P. Wardley, 2017 */
+
+h1 {
+font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3, h4, h5, h6, p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: inherit;
+}
+
+p {
+    font: 13px/1.5 "Rubik", sans-serif;
+	}
+
+html,body,#map {
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    font-family: 'Rubik', sans-serif;
+    /*display: inline-block;
+    position: relative;
+    z-index: 9;*/
+}
+
+#panel {
+    width: 100%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#title {
+    position: fixed;
+/*    color: #272727;*/
+    color: #383737;
+    font-size: 25px;
+    text-shadow: -1px 0 #fff8ef, 0 1px #fff8ef, 1px 0 #fff8ef, 0 -1px #fff8ef;
+    z-index: 10000;
+    left:10px;
+    top: -30px;
+    width: 25%;
+    /*background-color: rgba(107,196,157,0.6);*/
+    text-align: left;
+    padding-bottom: 0px;
+}
+
+#homeButton {
+    position:fixed;
+    z-index: 1005; 
+    right: 13px;
+    bottom: 95px;
+    color: rgba(245,102,106,1);
+}
+
+#homeButton:hover {
+    color: white;
+/*    opacity: 0.7;*/
+    cursor: pointer;
+}
+
+.show:hover {
+    color: white;
+/*    opacity: 0.7;*/
+    cursor: pointer;
+}
+
+#splash {
+    z-index: 1001;
+    position: fixed;
+    top: 25%;
+    left: 20%;
+    widows: auto;
+    padding: 10px;
+    height: auto;
+    width: 700px;
+    background-color: #fff;
+	border-bottom: 1px solid #ccc;
+    border: 2px solid rgba(245,102,106,0.8);
+    border-radius: 4px;
+    opacity: 0.9;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.show {
+    z-index: 10001;
+    position: fixed;
+    top: 240px;
+    left: 5px;
+    padding: 10px;
+    height: 10px;
+    width: 100px;
+    color: rgba(245,102,106,1);
+    text-align: left;
+    vertical-align: middle;
+}
+
+.my-text {
+    vertical-align: middle;
+    font-weight: bolder;
+}
+
+#legend input,
+#legend p {
+    display: inline-block;
+}
+
+#legend {
+    position:fixed;
+    z-index: 1004;
+    right:5px;
+    top:30px;
+    background-color: #fff;
+	border-bottom: 1px solid #ccc;
+    border: 2px solid rgba(245,102,106,0.8);
+    border-radius: 4px;
+    opacity: 0.9;
+    width:auto;
+    height:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+#slider {
+    position:fixed;
+    z-index: 1005;
+    right:5px;
+    top:95px;
+    background-color: #fff;
+	border-bottom: 1px solid #ccc;
+    border: 2px solid rgba(245,102,106,0.8);
+    border-radius: 4px;
+    opacity: 0.9;
+    padding: 8px;
+	width: 155px;
+	height: auto;
+	line-height: 26px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+#locator {
+    position:fixed;
+    z-index: 1005; 
+    left:5px;
+    bottom: 25px;
+    background-color: rgba(245,102,106,0.6);
+    width:auto;
+    height:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
