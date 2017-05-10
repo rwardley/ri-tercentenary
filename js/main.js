@@ -66,15 +66,13 @@ var geoMapLayer_sm = L.imageOverlay(geoRI_sm, geoMapBounds_sm).addTo(map);*/
 if (window.matchMedia("(min-width: 400px)").matches) {
   /* the viewport is at least 400 pixels wide */
     var geoRI = 'data/RI_Rumsey_geo4.png';
-    var geoMapBounds = [[42.104981, -71.974372], [41.179703, -71.006608]];
-    var geoMapLayer = L.imageOverlay(geoRI, geoMapBounds).addTo(map);
 
 } else {
   /* the viewport is less than 400 pixels wide */
-    var geoRI_sm = 'data/RI_Rumsey_geo4_small.png';
-    var geoMapBounds_sm = [[42.104981, -71.974372], [41.179703, -71.006608]];
-    var geoMapLayer_sm = L.imageOverlay(geoRI_sm, geoMapBounds_sm).addTo(map);
+    var geoRI = 'data/RI_Rumsey_geo4_small.png';
 }
+var geoMapBounds = [[42.104981, -71.974372], [41.179703, -71.006608]];
+var geoMapLayer = L.imageOverlay(geoRI, geoMapBounds).addTo(map);
 
 function updateOpacity(value) { console.log(updateOpacity);
     geoMapLayer.setOpacity(value);
