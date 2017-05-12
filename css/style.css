@@ -49,7 +49,7 @@ html,body,#map {
 }
 
 #homeButton {
-    position:fixed;
+    position:absolute;
     z-index: 1005; 
     right: 13px;
     bottom: 95px;
@@ -87,7 +87,7 @@ html,body,#map {
 /*}*/
 
 #splash {
-    z-index: 1001;
+    z-index: 1005;
     position: absolute;
     height: 300px;
     width: 700px;
@@ -107,10 +107,10 @@ html,body,#map {
 
 .show {
     z-index: 10001;
-    position: fixed;
-    top: 240px;
-    left: 5px;
-    padding: 10px;
+/*    position: fixed;*/
+/*    top: 240px;*/
+/*    left: 5px;*/
+/*    padding: 10px;*/
     height: 10px;
     width: 100px;
     color: rgba(245,102,106,1);
@@ -119,7 +119,8 @@ html,body,#map {
 }
 
 .my-text {
-    vertical-align: middle;
+    font-size: 20px;
+    vertical-align: bottom;
     font-weight: bolder;
 }
 
@@ -148,15 +149,15 @@ html,body,#map {
 
 #slider {
     position:fixed;
-    z-index: 1005;
+    z-index: 1001;
     right:5px;
-    top:95px;
+    top:90px;
     background-color: #fff;
 	border-bottom: 1px solid #ccc;
     border: 2px solid rgba(245,102,106,0.8);
     border-radius: 4px;
     opacity: 0.9;
-    padding: 8px;
+    padding: 0 8px;
 	width: 155px;
 	height: auto;
 	line-height: 26px;
@@ -164,6 +165,10 @@ html,body,#map {
 	text-align: center;
 	text-decoration: none;
 	color: black;
+}
+
+#slider p {
+    margin-bottom: 0;
 }
 
 #locator {
@@ -210,17 +215,6 @@ html,body,#map {
   h1{
     font-size:30px;
   }
-  .image-buttons{
-    position:static;
-    margin:auto;
-    text-align:center;
-  }
-  .put-image-here{
-    margin-bottom:1em;
-  }
-  .put-desc-here {
-    margin-bottom:1em;
-}
 
 @media (max-width: 946px) {
   h1{
@@ -232,6 +226,9 @@ html,body,#map {
   h1{
     font-size:22px;
   }
+  #homeButton{
+    bottom: 90px;      
+    }
 }
 
 @media (max-width: 821px) {
@@ -244,7 +241,7 @@ html,body,#map {
   #title{
     padding-bottom:10px;
   }
-
+    
   #splash{
       top:50px;
       width: 80%;
@@ -257,7 +254,12 @@ html,body,#map {
   #legend{
     top: 0;     
     }
-    
+  .show{
+    font-size: 15px; 
+    }
+  .my-text{
+   font-size: 15px;     
+    }
   h1 {
     margin-bottom: 0;
     font-size:18px;
@@ -268,7 +270,9 @@ html,body,#map {
   #title{
     padding-bottom:10px;
   }
-
+  #homeButton{
+    bottom: 105px;      
+    }
   h1 {
     margin-bottom: 0;
     font-size:16px;
