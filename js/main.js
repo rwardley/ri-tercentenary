@@ -49,7 +49,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     //tileSize: 512,
     maxZoom: 18,
     id: 'mapbox/light-v11',
-    opacity: 0.65,
+    //opacity: 0.65,
     accessToken:'pk.eyJ1IjoicndhcmRsZXkiLCJhIjoiY2lzaTZrMzJ1MDAyazJ6b2NocHR4azM3ZCJ9.tuwmJFqCVSqf4TmTl8kJ6w'
 }).addTo(map);
 
